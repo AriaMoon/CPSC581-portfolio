@@ -3,16 +3,56 @@
     position: absolute;/*so this makes the window moveable apparetnly?*/
     top: 100px;
     left: 100px;
-    background: white;
+    width: 250px;/*look up windows 95 values*/
+    background: #c0c0c0;
     border: 2px solid black;
     padding: 10px;
 }
 
-.desktop{
+.title-bar{
+    background: navy;
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    cursor: grab;/*hmmm*/
+}
+
+.content{
+    padding: 10px;
+    background: white;
+}
+
+.close-button{
+    background: lightgray;
+    border: none;
+    cursor: pointer;
+}
+
+#desktop{
     width: 100vw;
     height: 100vw;
-    background:008080;
+    background:#008080;
     position: relative;
     font-family: sans-serif;
     overflow: hidden;
+}
+
+.icon{
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px;
+    color: white;/*text color*/
+}
+.icon img{
+    width: 32px;
+    height: 32px;
+}
+
+#about-icon{
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
