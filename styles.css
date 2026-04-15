@@ -1,0 +1,9 @@
+.window{
+    display: none;/*this makes the window invisible until revealed - good practice???*/
+    position: absolute;/*so this makes the window moveable apparetnly?*/
+    top: 100px;
+    left: 100px;
+    background: white;
+    border: 2px solid black;
+    padding: 10px;
+}
