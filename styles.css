@@ -7,3 +7,12 @@
     border: 2px solid black;
     padding: 10px;
 }
+
+.desktop{
+    width: 100vw;
+    height: 100vw;
+    background:008080;
+    position: relative;
+    font-family: sans-serif;
+    overflow: hidden;
+}
