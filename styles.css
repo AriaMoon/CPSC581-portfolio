@@ -1,3 +1,6 @@
+body{
+    margin: 0;
+}
 .window{
     display: none;/*this makes the window invisible until revealed - good practice???*/
     position: absolute;/*so this makes the window moveable apparetnly?*/
@@ -30,12 +33,31 @@
 }
 
 #desktop{
-    width: 100vw;
-    height: 100vw;
+    width: 100svw;
+    height: 100svh;
     background:#008080;
     position: relative;
     font-family: sans-serif;
     overflow: hidden;
+}
+ #taskbar{
+    
+    position:absolute;
+    height: 25px;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+    background: lightgray;
+    color: black;
+    border-top: 5px solid white;
+}
+#start-button{
+    height: 25px;
+    width: 45px;
+    border-bottom: black;
+    border-right: black;
+    border-left: white;
+    border-bottom: white;
 }
 
 .icon{
