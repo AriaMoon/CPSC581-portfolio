@@ -40,25 +40,6 @@ body{
     font-family: sans-serif;
     overflow: hidden;
 }
- #taskbar{
-    
-    position:absolute;
-    height: 25px;
-    width: 100vw;
-    bottom: 0;
-    left: 0;
-    background: lightgray;
-    color: black;
-    border-top: 5px solid white;
-}
-#start-button{
-    height: 25px;
-    width: 45px;
-    border-bottom: black;
-    border-right: black;
-    border-left: white;
-    border-bottom: white;
-}
 
 .icon{
     width: 32px;
@@ -77,4 +58,24 @@ body{
     position: absolute;
     top: 20px;
     left: 20px;
+}
+
+#taskbar{
+    
+    position:absolute;
+    height: 25px;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+    background: lightgray;
+    color: black;
+    border-top: 5px solid white;
+}
+#start-button{
+    height: 25px;
+    width: 45px;
+    border-bottom: black;
+    border-right: black;
+    border-left: white;
+    border-bottom: white;
 }
