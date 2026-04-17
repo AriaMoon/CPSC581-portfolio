@@ -7,42 +7,47 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div id="desktop">
+        <div id="screen">
+            <div id="desktop">
 
-            <div class="icon" id="about-icon">
-                <img src="images/recycle_bin_empty-4.png">
-                <p>About Me</p>
-            </div>
+                <div class="icon" id="about-icon">
+                    <img src="images/recycle_bin_empty-4.png">
+                    <p>About Me</p>
+                </div>
 
-            <div class="window" id="about-window">
-                <div class="title-bar">
-                    <span>About Me</span>
-                    <button class="close-button">X</button>
+                <div class="window" id="about-window">
+                    <div class="title-bar">
+                        <span>About Me</span>
+                        <button class="close-button">X</button>
+                    </div>
+                    <div class="content">
+                        <p>Hey! I'm Aria, a third year CPSC major studying at UCalgary</p>
+                    </div>
                 </div>
-                <div class="content">
-                    <p>Hey! I'm Aria, a third year CPSC major studying at UCalgary</p>
-                </div>
-            </div>
-            
-            <div class="window" id="design-philosophy-window">
-                <div class="title-bar">
-                    <span>The Design Philosophy</span>
-                    <button class="close-button">X</button>
-                </div>
-                <div class="content">
-                    <p>my design philosophy began 3 score and twenty moons ago...</p>
-                </div>
-            </div>
 
-            <div id="taskbar">
-                <button id="start-button">Start</button>
-            </div>
-            <!--implement clock if there's time-->>
-            <div id="clock">
-                <p></p>
-            </div>
+                <div class="window" id="design-philosophy-window">
+                    <div class="title-bar">
+                        <span>The Design Philosophy</span>
+                        <button class="close-button">X</button>
+                    </div>
+                    <div class="content">
+                        <p>my design philosophy took root 2 score and 8 moons ago...</p>
+                    </div>
+                </div>
+
+                <div id="taskbar">
+                    <button class="directory-button" id="start-button">
+                        <img src="images/telephony-3.png">
+                        <p>Start</p>
+                    </button>
+                </div>
+                <!--implement clock if there's time-->>
+                <div id="clock">
+                    <p></p>
+                </div>
 
         </div>
+    </div>
 
         <!--linking js-->
         <script src="scripts.js"></script>
