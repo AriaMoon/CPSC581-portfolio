@@ -15,7 +15,7 @@ body{
 
     border: 4px solid #555;
 
-    margin: auto;/*keeps dekstop GLUED to the top of the browser - want it even*/
+    margin: auto;
     margin-top: 40px auto;
 }
 
@@ -81,6 +81,11 @@ body{
 #taskbar{
     
     position:absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+
     height: 25px;
     width: 100vw;
     bottom: 0;
@@ -95,13 +100,25 @@ body{
 }
 
 #start-button{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
     margin: 5px;
     padding: 4px 10px;
+    height: 25px;/*or, we figure out how to constrain the height to the taskbar's height*/
     background: #c0c0c0;
+
     border: 2px solid;
     border-top-color: white;
     border-right-color: white;
     border-left-color: black;
     border-bottom-color: black;
+
     font-weight: bold;
+}
+
+#clock{
+    font-size: 14px;
+    color: black;
 }

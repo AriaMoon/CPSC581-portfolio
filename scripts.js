@@ -1,3 +1,20 @@
+//clock functionality logic
+function updateClock(){
+
+    const now = new Date();
+    const time = now.toLocaleTimeString([], {
+        hour: '2-digit',
+        minute: '2-digit'
+    });
+
+    document.getElementById("clock").textContent = time;
+}
+
+setInterval(updateClock, 1000);
+updateClock();
+
+
+//close window logic
 const icon = document.getElementById("about-icon");
 const windowEl = document.getElementById("about-window");
 
@@ -9,6 +26,8 @@ document.querySelector(".close-button").addEventListener("click", () => {
     windowEl.style.display="none";
 });
 
+
+//draggin logic
 let activeWindow = null;
 let offsetX = 0;
 let offsetY = 0;
