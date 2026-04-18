@@ -1,18 +1,18 @@
-//clock functionality logic
-function updateClock(){
+//clock  logic
+console.log("clock element:", document.getElementById("clock"));
 
-    const now = new Date();
-    const time = now.toLocaleTimeString([], {
-        hour: '2-digit',
-        minute: '2-digit'
-    });
+function updateClock() {
+  const now = new Date();
 
-    document.getElementById("clock").textContent = time;
+  const hours = now.getHours().toString().padStart(2, '0');
+  const minutes = now.getMinutes().toString().padStart(2, '0');
+
+  document.getElementById("clock").textContent = hours + ":" + minutes;/**/
+  /*document.getElementById("clock").textContent = "working";*/
 }
 
 setInterval(updateClock, 1000);
 updateClock();
-
 
 //close window logic
 const icon = document.getElementById("about-icon");
